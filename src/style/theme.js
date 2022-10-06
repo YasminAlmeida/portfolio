@@ -7,6 +7,7 @@ const theme = {
   gradienteLitBlue: 'linear-gradient(225deg, #31ffff 0%, #7125e8 100%);',
   gradientePurpleBlue: 'linear-gradient(225deg, #7125e8 0%, #31ffff 100%);',
   gradienteBluePurple: 'linear-gradient(225deg, #31ffff 0%, #7125e8 100%)',
+  gradientePinkPurple: 'linear-gradient(225deg, #f8f8 0%, #7125e8 100%)',
   text: '#848DA0',
   textHighlight: '#444B5B',
   textLight: '#C4C4C4',

@@ -6,9 +6,11 @@ export default function Banner() {
     <S.Body>
       <S.ContainerBody>
         <S.ContainerPicture>
-          <S.Frame>
-            <S.Picture src={Picture} alt="foto" srcset="" />
-          </S.Frame>
+          <S.BckgroundPicture>
+            <S.Frame>
+              <S.Picture src={Picture} alt="foto" srcset="" />
+            </S.Frame>
+          </S.BckgroundPicture>
         </S.ContainerPicture>
         <S.ContainerInformations>
           <S.TextWelcome>Seja bem vind@</S.TextWelcome>

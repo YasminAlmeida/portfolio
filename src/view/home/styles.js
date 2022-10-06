@@ -6,7 +6,7 @@ export const Body = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   justify-items: start;
 `;

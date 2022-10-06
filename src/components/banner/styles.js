@@ -29,8 +29,19 @@ export const ContainerPicture = styled.div`
   display: grid;
   place-items: center;
 `;
+export const BckgroundPicture = styled.div`
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(35deg, transparent, #f8f8, transparent);
+  display: grid;
+
+  transform: rotate(18deg);
+`;
 export const Frame = styled.figure`
   border-radius: 2rem;
+  transform: rotate(343deg);
+  background: #f8f8;
+  border-radius: 4rem;
 `;
 export const TextName = styled.h4`
   background-image: ${({ theme }) => theme.gradienteBluePurple};
@@ -71,6 +82,7 @@ export const ContainerArray = styled.section`
   margin-top: 20px;
   padding: 10px;
   box-shadow: 2px 2px 3px #7ac7e3;
+  text-align: start;
   div {
     margin-left: 2.1rem;
   }
