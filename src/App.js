@@ -1,11 +1,13 @@
-import Header from './view/header/index';
-import Banner from './components/banner/index';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './style/global';
+import Home from './view/home/index';
+import theme from './style/theme';
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Banner />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Home />
+      <GlobalStyles />
+    </ThemeProvider>
   );
 }
 
