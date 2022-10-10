@@ -1,21 +1,20 @@
 import styled from 'styled-components';
-import Banner from '../../assets/Img/banner.png';
 
 export const Picture = styled.img`
   max-width: 280px;
   border-radius: 4rem;
 `;
 export const Body = styled.section`
-  /* background-image: url(${Banner});
-  background-repeat: no-repeat;
-  background-size: cover; */
   padding: 30px;
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+  padding-top: 100px;
 `;
 export const ContainerBody = styled.section`
   display: grid;
   grid-template-columns: 450px 1fr;
   align-items: center;
   align-items: center;
+  align-items: end;
 `;
 export const ContainerInformations = styled.section`
   display: grid;
@@ -34,7 +33,6 @@ export const BckgroundPicture = styled.div`
   border-radius: 2rem;
   background: linear-gradient(35deg, transparent, #f8f8, transparent);
   display: grid;
-
   transform: rotate(18deg);
 `;
 export const Frame = styled.figure`
@@ -52,6 +50,7 @@ export const TextName = styled.h4`
   color: black;
   margin-bottom: 0;
   text-align: end;
+  font-family: serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
 `;
 export const TextWelcome = styled.h4`
   background-image: ${({ theme }) => theme.gradienteBluePurple};
@@ -63,6 +62,7 @@ export const TextWelcome = styled.h4`
 `;
 export const TextInfo = styled.h6`
   background-image: ${({ theme }) => theme.gradientePurpleBlue};
+  background-image: ${({ theme }) => theme.gradientePurpleBlue};
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -72,6 +72,7 @@ export const TextInfo = styled.h6`
 `;
 export const ArrayInfo = styled.h6`
   color: ${({ theme }) => theme.textLight};
+  font-size: 0.68rem;
 `;
 export const ContainerArray = styled.section`
   background: ${({ theme }) => theme.gradienteDarkColor};

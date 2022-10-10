@@ -14,8 +14,12 @@ export default function Banner() {
         </S.ContainerPicture>
         <S.ContainerInformations>
           <S.TextWelcome>Seja bem vind@</S.TextWelcome>
+          {/* <Typical
+            steps={['Developer', 4000, 'Web Designer']}
+            loop={Infinity}
+            wrapper="p"
+          /> */}
           <S.TextName>Yasmin Vieira de Almeida</S.TextName>
-
           <S.TextInfo>Desenvolvedora Front-End</S.TextInfo>
           <S.ContainerArray>
             <S.ArrayInfo>

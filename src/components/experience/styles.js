@@ -4,6 +4,7 @@ export const SectionExperience = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 100px;
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 `;
 export const ContainerExperiences = styled.section`
   display: grid;
@@ -13,6 +14,7 @@ export const ContainerExperiences = styled.section`
 export const TextTitle = styled.h4`
   background-image: ${({ theme }) => theme.gradienteBluePurple};
   background-clip: text;
+  font-family: serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
@@ -25,7 +27,6 @@ export const Experience = styled.div`
   background: ${({ theme }) => theme.gradient};
   padding: 1rem;
   padding-top: 2.5rem;
-  height: 19rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,16 +42,22 @@ export const Year = styled.h4`
   background-clip: initial;
   -webkit-background-clip: text;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
 `;
 export const Position = styled.h6`
   color: ${({ theme }) => theme.secondary};
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+`;
+export const Company = styled.h4`
+  color: ${({ theme }) => theme.text};
+  font-size: 1rem;
   font-weight: 300;
+  margin-top: 0;
   margin-bottom: 1rem;
 `;
 export const Description = styled.h4`
   color: ${({ theme }) => theme.textLight};
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 300;
 `;
