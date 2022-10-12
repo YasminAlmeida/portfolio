@@ -29,4 +29,27 @@ export const ContainerIcon = styled.div`
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
+  animation: rotate 6s linear infinite;
+
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    50% {
+      transform: rotateY(180deg);
+    }
+
+    51% {
+      transform: rotateY(180deg);
+    }
+
+    99% {
+      transform: rotateY(0deg);
+    }
+
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
 `;

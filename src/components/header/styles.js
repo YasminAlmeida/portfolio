@@ -4,7 +4,7 @@ export const ContainerHeader = styled.div`
   background-color: #1111;
   height: 100px;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   width: 100%;
   font: 600 1.5rem/1.35 sans-serif;
   flex-direction: column;
@@ -15,17 +15,16 @@ export const Navigation = styled.nav`
   justify-content: flex-end;
   margin-bottom: 10px;
   right: 0;
-  position: fixed;
 `;
 export const ContainerLink = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  list-style: none;
 `;
 export const List = styled.li`
   padding: 10px;
+
   a {
     color: #7125e8;
     text-decoration: none;
