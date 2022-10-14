@@ -52,10 +52,18 @@ export default function Contact() {
           <S.BtnContact>Submit</S.BtnContact>
         </S.ContainerContact>
         <S.ContainerSocialMidia>
-          <S.SocialMidia src={Git} alt="" srcset="" />
-          <S.SocialMidia src={Inst} alt="" srcset="" />
-          <S.SocialMidia src={Twit} alt="" srcset="" />
-          <S.SocialMidia src={Link} alt="" srcset="" />
+          <a href="https://github.com/YasminAlmeida">
+            <S.SocialMidia src={Git} alt="git" />
+          </a>
+          <a href="https://www.instagram.com/invites/contact/?i=1d6ph6lzqmo81&utm_content=2sz79pj">
+            <S.SocialMidia src={Inst} alt="" />
+          </a>
+          <a href="https://twitter.com/ysvalmeida?t=WsFwZsozhm1sEetZIl1NYA&s=08">
+            <S.SocialMidia src={Twit} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/yasmin-almeida-b62699210/">
+            <S.SocialMidia src={Link} alt="" />
+          </a>
         </S.ContainerSocialMidia>
       </S.ContainerSend>
     </S.SectionContact>

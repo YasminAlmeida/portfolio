@@ -12,6 +12,9 @@ export default function Header() {
           <S.List>
             <Link to="./about">About</Link>
           </S.List>
+          <S.List>
+            <Link to="./projects">Projects</Link>
+          </S.List>
         </S.ContainerLink>
       </S.Navigation>
     </S.ContainerHeader>

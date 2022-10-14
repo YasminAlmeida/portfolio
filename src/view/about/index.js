@@ -2,7 +2,7 @@ import React from 'react';
 import Idiomas from '../../assets/svg/idiomas.svg';
 import Cursos from '../../assets/svg/cursos.svg';
 import PictureAbout from '../../assets/Img/ft.png';
-import Contact from '../../components/Contact';
+import Contact from '../../components/contact';
 
 import * as S from './styles';
 export default function About() {

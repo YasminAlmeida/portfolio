@@ -97,14 +97,16 @@ export const TextContact = styled.h4`
 export const SocialMidia = styled.img`
   width: 50px;
   height: 50px;
+  margin-top: 2px;
 `;
 export const ContainerSend = styled.div`
   display: grid;
   grid-template-columns: 1fr 50px;
   margin-top: 50px;
-  align-items: center;
+  align-items: stretch;
 `;
 export const ContainerSocialMidia = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 `;
