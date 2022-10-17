@@ -1,80 +1,48 @@
 import React from 'react';
 import * as S from './styles';
-import Animals from '../../assets/video/animals.gif';
-import Calculator from '../../assets/video/calculator.gif';
-import CatsAndDogs from '../../assets/video/catsAndDogs.gif';
+import { useState } from 'react';
+import { Gallery } from 'react-grid-gallery';
+import { images as IMAGES } from '../../components/enums/galleryImages';
+
 export default function Projects() {
-  const galeria = document.querySelectorAll('img');
-  const galeriaContainer = document.querySelector('.SectionProject');
+  const [bigImage, setBigImage] = useState(IMAGES[0]);
+  const [images, setImages] = useState(IMAGES);
+  const hasSelected = images.some((image) => image.isSelected);
 
-  function trocarImagem(event) {
-    const img = event.currentTarget;
-    const media = matchMedia('(min-width: 1000px)').matches;
-    if (media) {
-      galeriaContainer.prepend(img);
-    }
-  }
+  const handleSelect = (index) => {
+    const nextImages = images.map((image, i) =>
+      i === index ? { ...image, isSelected: !image.isSelected } : image,
+    );
+    setImages(nextImages);
+    setBigImage(images[index]);
+  };
+  const handleSelectAllClick = () => {
+    const nextImages = images.map((image) => ({
+      ...image,
+      isSelected: !hasSelected,
+    }));
+    setImages(nextImages);
+  };
 
-  function eventosGaleria(img) {
-    img.addEventListener('click', trocarImagem);
-  }
-
-  galeria.forEach(eventosGaleria);
   return (
     <>
       <S.Body>
         <S.TextTitle>Projetos | Meu portfólio</S.TextTitle>
-        <S.SectionProject>
-          <div>
-            <h3>Projeto de uma calculadora Versatil</h3>
+        <div>
+          {bigImage && (
             <div>
-              <a href="">
-                <S.Img src={Calculator} alt="" />
-              </a>
+              <S.InfoTitle>{bigImage.caption}</S.InfoTitle>
+              <img src={bigImage.src} alt="imagem" />
+              <p>{bigImage.description}</p>
             </div>
-            {/* <p>
-              O projeto foi realizado focando no desenvolvimento de duas
-              calculadores, uma específica para o calculo do teorema de
-              pitagoras e uma calculadora comum.
-            </p>
-            <ul>
-              <li>React</li>
-            </ul> */}
+          )}
+          <div className="p-t-1 p-b-1">
+            <button onClick={handleSelectAllClick}>
+              {hasSelected ? 'Clear selection' : 'Select all'}
+            </button>
           </div>
-          <div>
-            <h3>Projeto de uma calculadora Versatil</h3>
-            <div>
-              <a href="">
-                <S.Img src={CatsAndDogs} alt="" />
-              </a>
-            </div>
-            {/* <p>
-              O projeto foi realizado com o apoio do cuso da plataforma
-              VaiNaWeb, foi utilizado:
-            </p>
-            <ul>
-              <li>React</li>
-              <li>API externo</li>
-            </ul> */}
-          </div>
-          <div>
-            <h3>Um dos Primeiros projetos realizados</h3>
-            <div>
-              <a href="https://yasminalmeida.github.io/Animals/">
-                <S.Img src={Animals} alt="" />
-              </a>
-            </div>
-            {/* <p>
-              O projeto foi realizado com o apoio do cuso da plataforma
-              Origamid, foi utilizado:
-            </p>
-            <ul>
-              <li>Javascripst</li>
-              <li>Html</li>
-              <li>Css</li>
-            </ul> */}
-          </div>
-        </S.SectionProject>
+          <Gallery images={images} onSelect={handleSelect} />
+        </div>
       </S.Body>
     </>
   );

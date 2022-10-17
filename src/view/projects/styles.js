@@ -25,22 +25,18 @@ export const TextTitle = styled.h4`
 `;
 export const SectionProject = styled.section`
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  display: grid;
-  max-width: 200px;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  div {
-  }
-  & > :first-child {
-    grid-column: 1/-1;
-    img {
-      width: 700px;
-    }
-  }
+  justify-content: space-around;
 `;
 export const Img = styled.img`
   width: 400px;
   height: 100%;
+`;
+export const InfoTitle = styled.p`
+  margin-bottom: 20px;
+  margin-top: 50px;
+  background-image: ${({ theme }) => theme.gradienteBluePurple};
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
 `;
