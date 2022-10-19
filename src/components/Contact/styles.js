@@ -9,6 +9,12 @@ export const TextTitle = styled.h4`
   color: black;
   margin-bottom: 0;
   text-align: start;
+  @media (max-width: 850px) {
+    font-size: 2.8rem;
+  }
+  @media (max-width: 680px) {
+    font-size: 2.2rem;
+  }
 `;
 export const SectionContact = styled.section`
   display: grid;
@@ -19,6 +25,9 @@ export const ContainerContact = styled.form`
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 50px;
+  @media (max-width: 680px) {
+    margin-top: 10px;
+  }
 `;
 export const BtnContact = styled.button`
   color: #c6c9d8;
@@ -38,6 +47,9 @@ export const BtnContact = styled.button`
     background: #fff;
     border-color: #fff;
     color: #84e;
+  }
+  @media (max-width: 680px) {
+    margin-top: 20px;
   }
 `;
 export const Input = styled.input`
@@ -93,11 +105,21 @@ export const TextContact = styled.h4`
   -webkit-text-fill-color: transparent;
   font-size: 1.8rem;
   margin-top: 10px;
+  @media (max-width: 680px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 export const SocialMidia = styled.img`
   width: 50px;
   height: 50px;
   margin-top: 2px;
+  @media (max-width: 680px) {
+    max-width: 40px;
+    max-height: 40px;
+  }
 `;
 export const ContainerSend = styled.div`
   display: grid;

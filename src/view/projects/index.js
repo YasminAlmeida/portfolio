@@ -20,33 +20,25 @@ export default function Projects() {
     <>
       <S.Body>
         <S.TextTitle>Últimos Projetos | Meu portfólio</S.TextTitle>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-
-            width: '100%',
-          }}
-        >
+        <div>
           {bigImage && (
             <S.ContainerInfo>
-              <img src={bigImage.src} alt="imagem" />
+              <S.Img src={bigImage.src} alt="imagem" />
               <S.ContainerResum>
                 <S.InfoTitle>{bigImage.caption}</S.InfoTitle>
-                <p>{bigImage.description}</p>
+                <S.Description>{bigImage.description}</S.Description>
                 <S.BtnSite href={bigImage.link}>Visualizar o Projeto</S.BtnSite>
               </S.ContainerResum>
             </S.ContainerInfo>
           )}
-          <div
-            style={{
-              marginLeft: '10%',
-              marginTop: '20px',
-            }}
-          >
-            <Gallery images={images} onSelect={handleSelect} />
-          </div>
+          <S.ContainerGallery>
+            <Gallery
+              enableLightbox={false}
+              maxRows={6}
+              images={images}
+              onSelect={handleSelect}
+            />
+          </S.ContainerGallery>
         </div>
       </S.Body>
     </>
