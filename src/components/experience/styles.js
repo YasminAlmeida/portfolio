@@ -10,6 +10,9 @@ export const ContainerExperiences = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const TextTitle = styled.h4`
   background-image: ${({ theme }) => theme.gradienteBluePurple};
@@ -21,6 +24,12 @@ export const TextTitle = styled.h4`
   color: black;
   margin-bottom: 0;
   text-align: start;
+  @media (max-width: 850px) {
+    font-size: 2.8rem;
+  }
+  @media (max-width: 680px) {
+    font-size: 2.2rem;
+  }
 `;
 export const Experience = styled.div`
   margin: 100px 20px 0;
@@ -43,6 +52,11 @@ export const Year = styled.h4`
   -webkit-background-clip: text;
   font-size: 2rem;
   margin-bottom: 1.3rem;
+  @media (max-width: 850px) {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-top: 0rem;
+  }
 `;
 export const Position = styled.h6`
   color: ${({ theme }) => theme.secondary};
@@ -60,4 +74,7 @@ export const Description = styled.h4`
   color: ${({ theme }) => theme.textLight};
   font-size: 1.05rem;
   font-weight: 300;
+  @media (max-width: 780px) {
+    font-size: 1rem;
+  }
 `;

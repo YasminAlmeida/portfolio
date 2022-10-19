@@ -4,7 +4,6 @@ export const ContainerHeader = styled.div`
   background-color: #1111;
   height: 100px;
   position: fixed;
-  /* top: 0; */
   width: 100%;
   font: 600 1.5rem/1.35 sans-serif;
   flex-direction: column;
@@ -30,6 +29,9 @@ export const List = styled.li`
     text-decoration: none;
     position: relative;
     display: inline-block;
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
   a::after {
     content: '';

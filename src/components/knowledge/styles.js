@@ -15,11 +15,21 @@ export const TextTitle = styled.h4`
   color: black;
   text-align: start;
   font-family: serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  @media (max-width: 850px) {
+    font-size: 2.8rem;
+  }
+  @media (max-width: 680px) {
+    font-size: 2.2rem;
+  }
 `;
 
 export const Img = styled.img`
   max-width: 80px;
   max-height: 80px;
+  @media (max-width: 850px) {
+    max-width: 50px;
+    max-height: 50px;
+  }
 `;
 export const ContainerIcon = styled.div`
   margin-top: 100px;

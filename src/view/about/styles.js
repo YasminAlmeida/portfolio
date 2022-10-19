@@ -23,7 +23,6 @@ export const ContainerText = styled.div`
   grid-template-columns: 1fr;
   font-size: 1.08rem;
   color: #c4c4c4;
-
   font-weight: 400;
 `;
 export const FormationExtra = styled.section`
@@ -36,7 +35,7 @@ export const FormationExtra = styled.section`
 `;
 export const SectionAbout = styled.section`
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
 `;
 

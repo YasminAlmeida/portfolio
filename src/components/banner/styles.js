@@ -3,11 +3,22 @@ import styled from 'styled-components';
 export const Picture = styled.img`
   max-width: 280px;
   border-radius: 4rem;
+  @media (max-width: 850px) {
+    max-width: 230px;
+  }
+  @media (max-width: 650px) {
+    max-width: 210px;
+    border-radius: 50%;
+  }
 `;
 export const Body = styled.section`
   padding: 30px;
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
   padding-top: 100px;
+  @media (max-width: 750px) {
+    padding: 0px;
+    padding-top: 100px;
+  }
 `;
 export const ContainerBody = styled.section`
   display: grid;
@@ -15,18 +26,36 @@ export const ContainerBody = styled.section`
   align-items: center;
   align-items: center;
   align-items: end;
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 `;
 export const ContainerInformations = styled.section`
   display: grid;
   justify-items: end;
   text-align: end;
   margin-right: 50px;
+  @media (max-width: 680px) {
+    grid-row: 1;
+    justify-items: end;
+  }
+  @media (max-width: 450px) {
+    grid-row: 2;
+    margin-right: 0px;
+  }
 `;
 export const ContainerPicture = styled.div`
   width: max-content;
   border-radius: 4rem;
   display: grid;
   place-items: center;
+  @media (max-width: 680px) {
+    grid-row: 1/-1;
+  }
+  @media (max-width: 680px) {
+    overflow: hidden;
+  }
 `;
 export const BckgroundPicture = styled.div`
   aspect-ratio: 1/1;
@@ -34,12 +63,20 @@ export const BckgroundPicture = styled.div`
   background: linear-gradient(35deg, transparent, #f8f8, transparent);
   display: grid;
   transform: rotate(18deg);
+  @media (max-width: 650px) {
+    transform: rotate(243deg);
+    border-radius: 50%;
+  }
 `;
 export const Frame = styled.figure`
   border-radius: 2rem;
   transform: rotate(343deg);
   background: #f8f8;
   border-radius: 4rem;
+  @media (max-width: 650px) {
+    transform: rotate(118deg);
+    border-radius: 50%;
+  }
 `;
 export const TextName = styled.h4`
   background-image: ${({ theme }) => theme.gradienteBluePurple};
@@ -51,6 +88,12 @@ export const TextName = styled.h4`
   margin-bottom: 0;
   text-align: end;
   font-family: serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  @media (max-width: 850px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 770px) {
+    font-size: 2.1rem;
+  }
 `;
 export const TextWelcome = styled.h4`
   background-image: ${({ theme }) => theme.gradienteBluePurple};
@@ -59,6 +102,9 @@ export const TextWelcome = styled.h4`
   -webkit-text-fill-color: transparent;
   font-size: 1.8rem;
   text-align: end;
+  @media (max-width: 850px) {
+    font-size: 1.6rem;
+  }
 `;
 export const TextInfo = styled.h6`
   background-image: ${({ theme }) => theme.gradientePurpleBlue};
@@ -69,6 +115,9 @@ export const TextInfo = styled.h6`
   font-size: 1.2rem;
   color: black;
   margin-top: 0;
+  @media (max-width: 850px) {
+    font-size: 1.1rem;
+  }
 `;
 export const ArrayInfo = styled.h6`
   color: ${({ theme }) => theme.textLight};

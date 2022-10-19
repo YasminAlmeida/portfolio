@@ -7,7 +7,6 @@ import { images as IMAGES } from '../../components/enums/galleryImages';
 export default function Projects() {
   const [bigImage, setBigImage] = useState(IMAGES[0]);
   const [images, setImages] = useState(IMAGES);
-  const hasSelected = images.some((image) => image.isSelected);
 
   const handleSelect = (index) => {
     const nextImages = images.map((image, i) =>
@@ -16,32 +15,38 @@ export default function Projects() {
     setImages(nextImages);
     setBigImage(images[index]);
   };
-  const handleSelectAllClick = () => {
-    const nextImages = images.map((image) => ({
-      ...image,
-      isSelected: !hasSelected,
-    }));
-    setImages(nextImages);
-  };
 
   return (
     <>
       <S.Body>
-        <S.TextTitle>Projetos | Meu portfólio</S.TextTitle>
-        <div>
+        <S.TextTitle>Últimos Projetos | Meu portfólio</S.TextTitle>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+
+            width: '100%',
+          }}
+        >
           {bigImage && (
-            <div>
-              <S.InfoTitle>{bigImage.caption}</S.InfoTitle>
+            <S.ContainerInfo>
               <img src={bigImage.src} alt="imagem" />
-              <p>{bigImage.description}</p>
-            </div>
+              <S.ContainerResum>
+                <S.InfoTitle>{bigImage.caption}</S.InfoTitle>
+                <p>{bigImage.description}</p>
+                <S.BtnSite href={bigImage.link}>Visualizar o Projeto</S.BtnSite>
+              </S.ContainerResum>
+            </S.ContainerInfo>
           )}
-          <div className="p-t-1 p-b-1">
-            <button onClick={handleSelectAllClick}>
-              {hasSelected ? 'Clear selection' : 'Select all'}
-            </button>
+          <div
+            style={{
+              marginLeft: '10%',
+              marginTop: '20px',
+            }}
+          >
+            <Gallery images={images} onSelect={handleSelect} />
           </div>
-          <Gallery images={images} onSelect={handleSelect} />
         </div>
       </S.Body>
     </>
