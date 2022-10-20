@@ -26,6 +26,7 @@ export const ContainerBody = styled.section`
   align-items: center;
   align-items: center;
   align-items: end;
+  justify-items: center;
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
     justify-items: center;

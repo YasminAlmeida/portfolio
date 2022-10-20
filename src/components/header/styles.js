@@ -15,6 +15,21 @@ export const Navigation = styled.nav`
   margin-bottom: 10px;
   right: 0;
 `;
+export const Icons = styled.img`
+  position: absolute;
+  top: 0;
+  width: 50px;
+  left: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 5px;
+  &:hover {
+    background-image: ${({ theme }) => theme.gradientePinkPurple};
+    background-size: 100px;
+    border-radius: 50%;
+  }
+  transition: 0.7s ease-in-out;
+`;
 export const ContainerLink = styled.ul`
   display: flex;
   justify-content: space-between;

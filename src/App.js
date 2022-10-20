@@ -1,14 +1,12 @@
-import { ThemeProvider } from 'styled-components';
-import GlobalStyles from './style/global';
-import theme from './style/theme';
 import Router from './routes/route';
+import GlobalStyles from './style/global';
+import { ThemeContextProvider } from './hooks/useTheme';
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeContextProvider>
       <Router />
-
       <GlobalStyles />
-    </ThemeProvider>
+    </ThemeContextProvider>
   );
 }
 
