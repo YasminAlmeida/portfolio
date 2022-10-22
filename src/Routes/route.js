@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../view/home/index';
 import About from '../view/about/index';
 import Header from '../components/header/index';
-import Projects from '../view/projects';
+import Projects from '../view/projects/index';
 import { useTheme } from '../hooks/useTheme';
 import { ThemeProvider } from 'styled-components';
 import Banner from '../assets/Img/banner.png';
