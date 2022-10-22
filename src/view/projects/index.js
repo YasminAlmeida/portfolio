@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './styles';
 import { useState } from 'react';
 import { Gallery } from 'react-grid-gallery';
-import { images as IMAGES } from '../../components/enums/galleryImages';
+import { images as IMAGES } from '../../enums/galleryImages';
 
 export default function Projects() {
   const [bigImage, setBigImage] = useState(IMAGES[0]);

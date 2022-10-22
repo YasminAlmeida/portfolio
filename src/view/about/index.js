@@ -4,7 +4,7 @@ import Cursos from '../../assets/svg/cursos.svg';
 import PictureAbout from '../../assets/Img/ft.png';
 
 import * as S from './styles';
-import Contact from '../../components/contact/index';
+import { Contact } from '../../components/contact/index';
 export default function About() {
   return (
     <S.ContainerAbout>
