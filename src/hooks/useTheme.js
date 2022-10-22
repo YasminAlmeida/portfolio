@@ -10,7 +10,7 @@ export const ThemeContextProvider = ({ children }) => {
 
   useEffect(() => {
     const a = window.localStorage.getItem('theme');
-    setTheme(a);
+    setTheme(a ? a : 'light');
   }, []);
 
   const changeTheme = () => {
