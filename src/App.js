@@ -1,6 +1,6 @@
-import Router from './routes/route';
 import GlobalStyles from './style/global';
 import { ThemeContextProvider } from './hooks/useTheme';
+import Router from './routes/routeList';
 function App() {
   return (
     <ThemeContextProvider>
