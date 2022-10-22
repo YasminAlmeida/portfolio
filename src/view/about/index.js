@@ -2,9 +2,9 @@ import React from 'react';
 import Idiomas from '../../assets/svg/idiomas.svg';
 import Cursos from '../../assets/svg/cursos.svg';
 import PictureAbout from '../../assets/Img/ft.png';
-import Contact from '../../components/contact';
 
 import * as S from './styles';
+import Contact from '../../components/contact/index';
 export default function About() {
   return (
     <S.ContainerAbout>
