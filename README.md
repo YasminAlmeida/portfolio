@@ -3,6 +3,7 @@
 💡 Projeto de um portifolio  com apoio da plataforma VaiNaWeb, utilizando React.
 
 ## 📁 Acesso ao projeto!
+https://portfolio-yasminalmeida.vercel.app/
 
 <p>Visualização do resultado Final</p>
 
