@@ -1,10 +1,10 @@
-import Animals from '../../assets/video/animals.gif';
-import Calculator from '../../assets/video/calculator.gif';
-import CatsAndDogs from '../../assets/video/catsAndDogs.gif';
-import Techno from '../../assets/video/techno.gif';
-import Movies from '../../assets/video/movieVue.gif';
-import RickAndMorty from '../../assets/video/rickandmorty.gif';
-import Ods from '../../assets/video/ods.gif';
+import Animals from '../assets/video/animals.gif';
+import Calculator from '../assets/video/calculator.gif';
+import CatsAndDogs from '../assets/video/catsAndDogs.gif';
+import Techno from '../assets/video/techno.gif';
+import Movies from '../assets/video/movieVue.gif';
+import RickAndMorty from '../assets/video/rickandmorty.gif';
+import Ods from '../assets/video/ods.gif';
 export const images = [
   {
     src: Calculator,
