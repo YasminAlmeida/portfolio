@@ -4,6 +4,7 @@ import CatsAndDogs from '../../assets/video/catsAndDogs.gif';
 import Techno from '../../assets/video/techno.gif';
 import Movies from '../../assets/video/movieVue.gif';
 import RickAndMorty from '../../assets/video/rickandmorty.gif';
+import Ods from '../../assets/video/ods.gif';
 export const images = [
   {
     src: Calculator,
@@ -32,6 +33,20 @@ export const images = [
     caption: 'Projeto Animals',
     description:
       ' O projeto foi realizado focando no desenvolvimento de um webSite de animais, onde o usuário pode ver informações sobre os animais e também pode ver fotos deles. O projeto foi realizado com o apoio do curso da plataforma Origamid',
+  },
+  {
+    src: Ods,
+    link: 'https://ods-two.vercel.app/',
+    width: 400,
+    height: 200,
+    isSelected: false,
+    tags: [
+      { value: 'Fremawork', title: 'React' },
+      { value: 'Linguage', title: 'JS' },
+    ],
+    caption: 'Projeto ODS',
+    description:
+      ' O projeto foi realizado focando no desenvolvimento de um webSite inspirado na ODS (Objetivos de Desenvolvimento Sustentavel) de Mato Grosso, onde o usuário pode ver as avaliações atuais. O projeto foi realizado com o apoio do curso da plataforma VaiNaWeb',
   },
   {
     src: CatsAndDogs,
