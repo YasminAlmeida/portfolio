@@ -15,6 +15,12 @@ export const Body = styled.section`
   padding: 30px;
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
   padding-top: 100px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1540px;
   @media (max-width: 750px) {
     padding: 0px;
     padding-top: 100px;

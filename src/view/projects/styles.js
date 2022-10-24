@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import Banner from '../../assets/Img/lite.jpg';
 
 export const Body = styled.section`
   padding-top: 110px;
@@ -12,6 +11,11 @@ export const Body = styled.section`
   grid-template-columns: 1fr;
   padding-top: 100px;
   align-items: center;
+  div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1540px;
+  }
   @media (max-width: 380px) {
     padding: 15px;
   }
@@ -24,8 +28,11 @@ export const TextTitle = styled.h4`
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
   color: black;
-  margin-bottom: 0;
   text-align: start;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
   @media (max-width: 1000px) {
     font-size: 2.5rem;
   }

@@ -17,9 +17,13 @@ export const TextTitle = styled.h4`
   }
 `;
 export const SectionContact = styled.section`
-  display: grid;
-  grid-template-columns: 1fr;
   margin-top: 50px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1540px;
 `;
 export const ContainerContact = styled.form`
   display: grid;
@@ -53,7 +57,7 @@ export const BtnContact = styled.button`
   }
 `;
 export const Input = styled.input`
-  width: 70%;
+  width: 85%;
   padding: 0 20px;
   border: 1px solid rgba(99, 117, 172, 135.5);
   border-radius: 5px;
@@ -76,7 +80,7 @@ export const Input = styled.input`
   }
 `;
 export const Mnessage = styled.textarea`
-  max-width: 70%;
+  width: 85%;
   padding: 0 20px;
   border: 1px solid rgba(99, 117, 172, 135.5);
   border-radius: 5px;
@@ -123,9 +127,12 @@ export const SocialMidia = styled.img`
 `;
 export const ContainerSend = styled.div`
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 1fr 150px;
   margin-top: 50px;
   align-items: stretch;
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 50px;
+  }
 `;
 export const ContainerSocialMidia = styled.div`
   display: flex;

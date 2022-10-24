@@ -11,8 +11,6 @@ export default function Header() {
       <S.Navigation>
         <S.ContainerLink>
           <div onClick={changeTheme}>
-            {/* {theme === 'light' && <S.Icons src={Moon} alt="moon" />}
-            {theme === ('dark' || undefined) && <S.Icons src={Sun} alt="sun" />} */}
             {theme === 'light' ? (
               <S.Icons src={Moon} alt="moon" />
             ) : (

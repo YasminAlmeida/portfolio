@@ -5,6 +5,12 @@ export const SectionKnowledge = styled.section`
   grid-template-columns: 1fr;
   margin-top: 100px;
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1540px;
 `;
 export const TextTitle = styled.h4`
   background-image: ${({ theme }) => theme.gradienteBluePurple};

@@ -36,6 +36,11 @@ export const SectionAbout = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1540px;
   @media (max-width: 830px) {
     grid-template-columns: 300px 1fr;
   }
@@ -104,8 +109,10 @@ export const TextTitle = styled.h4`
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
   color: black;
-  margin-bottom: 0;
-  text-align: start;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1540px;
   @media (max-width: 850px) {
     font-size: 2.8rem;
   }
