@@ -17,28 +17,30 @@ export default function Projects() {
   };
 
   return (
-    <S.Body>
-      <S.TextTitle>Últimos Projetos | Meu portfólio</S.TextTitle>
-      <div>
-        {bigImage && (
-          <S.ContainerInfo>
-            <S.Img src={bigImage.src} alt="imagem" />
-            <S.ContainerResum>
-              <S.InfoTitle>{bigImage.caption}</S.InfoTitle>
-              <S.Description>{bigImage.description}</S.Description>
-              <S.BtnSite href={bigImage.link}>Visualizar o Projeto</S.BtnSite>
-            </S.ContainerResum>
-          </S.ContainerInfo>
-        )}
-        <S.ContainerGallery>
-          <Gallery
-            enableLightbox={false}
-            maxRows={6}
-            images={images}
-            onSelect={handleSelect}
-          />
-        </S.ContainerGallery>
-      </div>
-    </S.Body>
+    <>
+      <S.Body>
+        <S.TextTitle>Últimos Projetos | Meu portfólio</S.TextTitle>
+        <div>
+          {bigImage && (
+            <S.ContainerInfo>
+              <S.Img src={bigImage.src} alt="imagem" />
+              <S.ContainerResum>
+                <S.InfoTitle>{bigImage.caption}</S.InfoTitle>
+                <S.Description>{bigImage.description}</S.Description>
+                <S.BtnSite href={bigImage.link}>Visualizar o Projeto</S.BtnSite>
+              </S.ContainerResum>
+            </S.ContainerInfo>
+          )}
+          <S.ContainerGallery>
+            <Gallery
+              enableLightbox={false}
+              maxRows={6}
+              images={images}
+              onSelect={handleSelect}
+            />
+          </S.ContainerGallery>
+        </div>
+      </S.Body>
+    </>
   );
 }
