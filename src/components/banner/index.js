@@ -20,7 +20,7 @@ export default function Banner() {
             <S.ArrayInfo>
               <span>Infos</span> {'\u007B'}
               <div>
-                Cargo: <span>Software Enginner Inter,</span>
+                Cargo: <span>Software Enginner Intern,</span>
               </div>
               <div>
                 Empresa: <span>Tabia Health</span>
