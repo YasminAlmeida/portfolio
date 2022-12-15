@@ -13,7 +13,7 @@ export const images = [
     height: 200,
     isSelected: false,
     tags: [
-      { value: 'Fremawork', title: 'React' },
+      { value: 'Framework', title: 'React' },
       { value: 'Linguage', title: 'JS' },
     ],
     caption: 'Projeto Calculadora',
@@ -27,7 +27,7 @@ export const images = [
     height: 200,
     isSelected: false,
     tags: [
-      { value: 'Fremawork', title: 'No' },
+      { value: 'Framework', title: 'No' },
       { value: 'Linguage', title: 'JS' },
     ],
     caption: 'Projeto Animals',
@@ -41,7 +41,7 @@ export const images = [
     height: 200,
     isSelected: false,
     tags: [
-      { value: 'Fremawork', title: 'React' },
+      { value: 'Framework', title: 'React' },
       { value: 'Linguage', title: 'JS' },
     ],
     caption: 'Projeto ODS',
@@ -55,7 +55,7 @@ export const images = [
     height: 200,
     isSelected: false,
     tags: [
-      { value: 'Fremawork', title: 'React' },
+      { value: 'Framework', title: 'React' },
       { value: 'Linguage', title: 'JS' },
     ],
     caption: 'Projeto CatsAndDogs',
@@ -69,7 +69,7 @@ export const images = [
     height: 200,
     isSelected: false,
     tags: [
-      { value: 'Fremawork', title: 'Vue' },
+      { value: 'Framework', title: 'Vue' },
       { value: 'Linguage', title: 'JS' },
     ],
     caption: 'Projeto Techno',
@@ -83,7 +83,7 @@ export const images = [
     height: 200,
     isSelected: false,
     tags: [
-      { value: 'Fremawork', title: 'Vue' },
+      { value: 'Framework', title: 'Vue' },
       { value: 'Linguage', title: 'JS' },
     ],
     caption: 'Projeto Movies',
@@ -97,7 +97,7 @@ export const images = [
     height: 200,
     isSelected: false,
     tags: [
-      { value: 'Fremawork', title: 'Vue' },
+      { value: 'Framework', title: 'Vue' },
       { value: 'Linguage', title: 'JS' },
     ],
     caption: 'Projeto RickAndMorty',
